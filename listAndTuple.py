@@ -57,3 +57,20 @@
 # print('size of tuple1 '+ str(tuple1.__sizeof__())+' bytes')
 # print('size of tuple2 '+ str(tuple2.__sizeof__())+' bytes')
 # print('size of tuple3 '+ str(tuple3.__sizeof__())+' bytes')
+
+numbers = 1, 2, 3, 4, 5
+result = []
+for num in numbers:
+    cube = num ** 3
+    pair = (num, cube)
+    result.append(pair)
+
+print(tuple(result))
+
+tuples = 2, 4, 3, 6, 8, 10, 12, 1, 2, 3, 14, 16
+result = []
+for tup in tuples:
+    if tup % 2 ==0:
+        result.append(tup)
+print(tuple(result))
+
